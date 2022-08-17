@@ -83,7 +83,7 @@ public abstract class BaseState implements Runnable, State {
     return this.flag.isCurrent(this);
   }
 
-  protected @Nullable Duration getDuration() {
+  public @Nullable Duration getDuration() {
     return null;
   }
 

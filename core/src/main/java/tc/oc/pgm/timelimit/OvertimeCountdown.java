@@ -42,7 +42,7 @@ public class OvertimeCountdown extends TimeLimitCountdown {
   }
 
   @Override
-  protected Component formatText() {
+  public Component formatText() {
     return translatable(
             "misc.overtime",
             NamedTextColor.YELLOW,
@@ -56,7 +56,7 @@ public class OvertimeCountdown extends TimeLimitCountdown {
   }
 
   @Override
-  protected boolean showChat() {
+  public boolean showChat() {
     return false;
   }
 

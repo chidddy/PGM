@@ -53,7 +53,7 @@ public class ModeChangeCountdown extends MatchCountdown implements Comparable<Mo
   }
 
   @Override
-  protected Component formatText() {
+  public Component formatText() {
     return translatable(
         "objective.modeCountdown",
         NamedTextColor.DARK_AQUA,
@@ -82,7 +82,7 @@ public class ModeChangeCountdown extends MatchCountdown implements Comparable<Mo
   }
 
   @Override
-  protected boolean showChat() {
+  public boolean showChat() {
     return false;
   }
 }

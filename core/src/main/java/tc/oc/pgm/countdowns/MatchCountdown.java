@@ -48,9 +48,9 @@ public abstract class MatchCountdown extends Countdown {
     return this.bossBar;
   }
 
-  protected abstract Component formatText();
+  public abstract Component formatText();
 
-  protected boolean showChat() {
+  public boolean showChat() {
     long secondsLeft = remaining.getSeconds();
     return secondsLeft > 0
         && (secondsLeft % 300 == 0

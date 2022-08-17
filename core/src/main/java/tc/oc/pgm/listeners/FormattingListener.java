@@ -66,7 +66,7 @@ public class FormattingListener implements Listener {
                 destroyable.getOwner().getName()));
   }
 
-  private Component formatContributions(
+  public static Component formatContributions(
       Collection<? extends Contribution> contributions, boolean showPercentage) {
     List<? extends Contribution> sorted = new ArrayList<>(contributions);
     sorted.sort(

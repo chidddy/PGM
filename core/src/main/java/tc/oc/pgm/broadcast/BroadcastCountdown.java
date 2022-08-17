@@ -22,12 +22,12 @@ public class BroadcastCountdown extends MatchCountdown {
   }
 
   @Override
-  protected boolean showChat() {
+  public boolean showChat() {
     return false;
   }
 
   @Override
-  protected Component formatText() {
+  public Component formatText() {
     return empty();
   }
 

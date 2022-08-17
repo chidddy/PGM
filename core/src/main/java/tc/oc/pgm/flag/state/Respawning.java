@@ -45,7 +45,7 @@ public class Respawning extends Spawned implements Returning {
   }
 
   @Override
-  protected Duration getDuration() {
+  public Duration getDuration() {
     return respawnTime;
   }
 

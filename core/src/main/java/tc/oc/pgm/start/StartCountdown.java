@@ -38,7 +38,7 @@ public class StartCountdown extends PreMatchCountdown {
   }
 
   @Override
-  protected Component formatText() {
+  public Component formatText() {
     return translatable(
         "countdown.matchStart", NamedTextColor.GREEN, secondsRemaining(NamedTextColor.DARK_RED));
   }

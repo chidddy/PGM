@@ -18,7 +18,7 @@ public class RestartCountdown extends MatchCountdown {
   }
 
   @Override
-  protected Component formatText() {
+  public Component formatText() {
     if (TimeUtils.isLongerThan(remaining, Duration.ZERO)) {
       return translatable(
           "countdown.restart", NamedTextColor.AQUA, secondsRemaining(NamedTextColor.DARK_RED));

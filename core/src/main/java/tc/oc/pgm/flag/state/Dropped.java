@@ -31,7 +31,7 @@ public class Dropped extends Uncarried implements Missing {
   }
 
   @Override
-  protected Duration getDuration() {
+  public Duration getDuration() {
     return this.post.getRecoverTime();
   }
 

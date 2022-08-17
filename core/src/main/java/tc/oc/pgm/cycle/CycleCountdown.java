@@ -45,7 +45,7 @@ public class CycleCountdown extends MatchCountdown {
   }
 
   @Override
-  protected Component formatText() {
+  public Component formatText() {
     Component mapName = nextMap == null ? null : text(nextMap.getName(), NamedTextColor.AQUA);
 
     TranslatableComponent cycleComponent;

@@ -34,12 +34,12 @@ public class TimeLimitCountdown extends MatchCountdown {
   }
 
   @Override
-  protected Component formatText() {
+  public Component formatText() {
     return translatable("misc.timeRemaining", NamedTextColor.AQUA, colonTime());
   }
 
   @Override
-  protected boolean showChat() {
+  public boolean showChat() {
     return this.timeLimit.getShow() && super.showChat();
   }
 

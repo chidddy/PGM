@@ -97,6 +97,10 @@ public class ScoreMatchModule implements MatchModule, Listener {
     return this.scores.get(competitor);
   }
 
+  public Set<ScoreBox> getScoreboxes() {
+    return this.scoreBoxes;
+  }
+
   /** Gets the score message for the match. */
   public Component getScoreMessage(MatchPlayer matchPlayer) {
     List<Component> scoreMessages = Lists.newArrayList();
